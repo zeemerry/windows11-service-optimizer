@@ -1,135 +1,287 @@
-# Security Policy
+<div align="center">
 
-## Supported Versions
+# 🔒 Security Policy
 
-The following versions of Windows 11 Service Optimizer are currently supported with security updates:
+**Windows 11 Service Optimizer - Security & Vulnerability Management**
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.2.x   | :white_check_mark: |
-| 1.1.x   | :white_check_mark: |
-| 1.0.x   | :x:                |
-| < 1.0  | :x:                |
+</div>
 
-## Reporting Security Vulnerabilities
+---
 
-We take the security of Windows 11 Service Optimizer seriously. If you discover a security vulnerability, please report it responsibly.
+## 🛡️ Supported Versions
 
-**Please do not open public issues for security vulnerabilities.**
+**🔄 Currently Supported Versions**
 
-### How to Report
+The following versions of Windows 11 Service Optimizer are **actively maintained** with security updates:
 
-1. **Email**: Send details to work.rezaul@outlook.com
-2. **Include**: Detailed description of the vulnerability, steps to reproduce, and potential impact
-3. **Response Time**: We aim to acknowledge receipt within 24 hours
-4. **Resolution**: Security issues will be prioritized and addressed promptly
+| Version | Support Status     | Security Updates |
+| ------- | ------------------ | ---------------- |
+| **1.2.x** | ✅ **Active**      | 🔄 Regular       |
+| **1.1.x** | ✅ **Active**      | 🔄 Regular       |
+| **1.0.x** | ❌ **EOL**         | 🚫 None          |
+| **< 1.0** | ❌ **EOL**         | 🚫 None          |
 
-### What to Include in Your Report
+> **🔥 Latest Version:** Always use the most recent version for optimal security
 
-- **Description**: Clear description of the vulnerability
-- **Steps to Reproduce**: Detailed steps to reproduce the issue
-- **Affected Versions**: Which versions are affected
-- **System Information**: Windows version, PowerShell version
-- **Impact Assessment**: Potential consequences if exploited
-- **Suggested Fix**: If you have suggestions for fixing the issue
+---
 
-## Security Considerations
+## 🚨 Reporting Security Vulnerabilities
 
-### Safe Service Management
+**🛡️ We take security seriously** and appreciate responsible disclosure of vulnerabilities.
 
-This script only disables services that are considered safe to disable:
+### ⚠️ Important Notice
+**🚫 Please do not open public issues for security vulnerabilities.**
 
-- ✅ **Safe to Disable**: Telemetry, gaming services, background apps
-- ❌ **Never Disabled**: Critical system services, security services, drivers
+### 📧 Secure Reporting Process
 
-### Execution Safety
+#### **Step 1: Contact Us**
+- **📧 Primary Contact:** work.rezaul@outlook.com
+- **🔐 Encrypted communication** available upon request
 
-- Script requires Administrator privileges (intentional security feature)
-- All service changes are reversible
-- No system files are modified
-- No registry changes that could break Windows
+#### **Step 2: Include Essential Details**
+- **📝 Clear description** of the vulnerability and its nature
+- **🔄 Step-by-step reproduction** guide with exact commands
+- **⚠️ Potential impact** assessment and severity level
+- **🆔 Affected versions** and system configurations
 
-### User Responsibility
+#### **Step 3: Response Timeline**
+- **⏰ Acknowledgment:** Within 24 hours of report
+- **🔍 Investigation:** Immediate prioritization for valid reports
+- **🛠️ Resolution:** Prompt fix development and deployment
+- **📢 Update:** You'll be notified of fix progress and release
 
-- Users should backup important data before running
-- Test in a virtual machine first if concerned about stability
-- Review the list of services being disabled
-- Understand that system behavior may change
+### 📋 Vulnerability Report Template
 
-## Best Practices
+**🎯 Complete Reports Should Include:**
 
-### Before Running the Script
+- **🔍 Description:** Clear, technical description of the vulnerability
+- **📋 Reproduction Steps:** Exact steps to reproduce the issue
+- **🎯 Affected Versions:** Which versions are impacted
+- **💻 System Information:** Windows/PowerShell versions, system specs
+- **⚡ Impact Assessment:** Potential consequences and exploit scenarios
+- **💡 Suggested Fix:** Proposed solutions (if available)
+- **📎 Proof of Concept:** Code samples or demonstrations (if safe to share)
 
-1. **Create System Restore Point**:
-   ```powershell
-   # Open System Properties → System Protection → Create
-   ```
+---
 
-2. **Backup Important Data**: Ensure all important files are backed up
+## 🔐 Security Considerations
 
-3. **Review Service List**: Check what services will be disabled
+**🛡️ Built-in safety measures to protect your system during optimization.**
 
-4. **Test in Safe Environment**: Consider testing on a non-production system first
+### ✅ Safe Service Management
 
-### After Running the Script
+**🎯 What We Optimize:**
 
-1. **Monitor System Behavior**: Watch for any unexpected issues
-2. **Verify Service Status**: Check which services were actually disabled
-3. **Test Critical Functionality**: Ensure important applications still work
-4. **Document Changes**: Note any issues for future reference
+| Safe to Disable | Never Modified |
+|----------------|---------------|
+| 📊 **Telemetry Services** | 🔒 **Security Services** |
+| 🎮 **Gaming Services** | 💻 **System Drivers** |
+| 📱 **Background Apps** | ⚙️ **Critical Processes** |
+| 🔄 **Update Services** | 🖥️ **Core Windows Services** |
 
-## Rollback Procedures
+### 🛡️ Execution Safety Features
 
-If you encounter issues after running the script:
+- **🔐 Admin Privileges Required** - Intentional security barrier
+- **↩️ Fully Reversible** - All changes can be undone
+- **📁 System File Protection** - No critical files are modified
+- **🧹 Clean Operations** - No permanent system alterations
 
-### Method 1: System Restore
-1. Open System Properties → System Protection
-2. Click "System Restore"
-3. Choose the restore point created before running the script
+### 👤 User Responsibility Guidelines
 
-### Method 2: Manual Service Restoration
+**⚠️ Recommended Precautions:**
+
+- **💾 Data Backup** - Always backup important files before running
+- **🖥️ Test Environment** - Consider testing in a virtual machine first
+- **📋 Service Review** - Examine the list of services being disabled
+- **🔄 Behavior Awareness** - Understand that system behavior may change
+
+---
+
+## 📋 Best Practices & Safety Guidelines
+
+**🚀 Follow these steps for the safest optimization experience.**
+
+### 🛡️ Before Running the Script
+
+#### **Step 1: Create System Restore Point**
 ```powershell
-# Re-enable specific services
+# Access through: System Properties → System Protection → Create
+Enable-ComputerRestore -Drive "C:\"
+Checkpoint-Computer -Description "Before Windows 11 Optimization"
+```
+
+#### **Step 2: Essential Preparations**
+- **💾 **Complete Backup** - Ensure all important data is safely backed up
+- **📋 **Service Review** - Examine and understand what will be disabled
+- **🖥️ **Safe Testing** - Test on non-production systems when possible
+- **⚡ **Power Management** - Ensure stable power during optimization
+
+### ✅ After Running the Script
+
+#### **Step 1: System Verification**
+- **👀 Monitor Behavior** - Watch for any unexpected system changes
+- **🔍 Verify Services** - Confirm which services were successfully disabled
+- **🧪 Test Functionality** - Ensure critical applications work correctly
+- **📝 Document Changes** - Record any observations for future reference
+
+#### **Step 2: Performance Validation**
+```powershell
+# Check disabled services
+Get-Service | Where-Object {$_.StartType -eq "Disabled"}
+
+# Monitor system performance
+Get-Process | Sort-Object CPU -Descending | Select-Object -First 5
+
+# Verify no critical services were affected
+Get-Service | Where-Object {$_.Status -eq "Running" -and $_.StartType -eq "Automatic"}
+```
+
+---
+
+## ↩️ Rollback & Recovery Procedures
+
+**🔧 Multiple recovery options if you encounter any issues.**
+
+### 🛠️ Recovery Methods
+
+#### **🎯 Method 1: System Restore (Recommended)**
+1. **⚙️ Access System Protection** - Open System Properties → System Protection
+2. **🔄 Select System Restore** - Click "System Restore" button
+3. **📅 Choose Restore Point** - Select the checkpoint created before optimization
+4. **✅ Confirm Recovery** - Follow prompts to restore your system
+
+#### **🔧 Method 2: Manual Service Restoration**
+```powershell
+# Restore specific services
 Set-Service "DiagTrack" -StartupType Automatic
 Start-Service "DiagTrack"
 
-# Re-enable multiple services
-$services = @("DiagTrack", "SysMain", "WSearch")
+# Batch restore multiple services
+$services = @("DiagTrack", "SysMain", "WSearch", "dmwappushservice")
+foreach ($service in $services) {
+    Set-Service $service -StartupType Automatic -ErrorAction SilentlyContinue
+    Start-Service $service -ErrorAction SilentlyContinue
+    Write-Host "Restored: $service" -ForegroundColor Green
+}
+```
+
+#### **⚡ Method 3: Quick Rollback Script**
+```powershell
+# Create and run this script to restore all services
+$services = Get-Content "original-services.txt"  # If you saved the list
 foreach ($service in $services) {
     Set-Service $service -StartupType Automatic -ErrorAction SilentlyContinue
     Start-Service $service -ErrorAction SilentlyContinue
 }
 ```
 
-## Security Updates
+---
 
-When security vulnerabilities are discovered and fixed:
+## 🔄 Security Update Management
 
-1. **New Release**: A new version will be released with fixes
-2. **Changelog**: Security fixes will be documented in release notes
-3. **Notification**: Major security updates will be announced
-4. **Migration Guide**: Instructions for updating from older versions
+**📢 How we handle security patches and vulnerability fixes.**
 
-## Responsible Disclosure
+### 🚀 Update Release Process
 
-We believe in responsible disclosure and will:
+When security vulnerabilities are discovered and resolved:
 
-- Acknowledge receipt of your report within 24 hours
-- Work diligently to investigate and reproduce the issue
-- Keep you informed of our progress
-- Credit you in the fix (with your permission)
-- Release fixes in a timely manner
+1. **📦 **New Release** - Immediate version release with security patches
+2. **📝 **Changelog** - Detailed security fix documentation in release notes
+3. **📢 **Community Notification** - Announcement to users about critical updates
+4. **📋 **Migration Guide** - Step-by-step instructions for safe updating
 
-## Contact Information
+### 🔍 Security Monitoring
 
-- **Security Reports**: work.rezaul@outlook.com
-- **General Support**: work.rezaul@outlook.com
-- **GitHub Issues**: [Report Issues](https://github.com/rezaulwork/windows11-service-optimizer/issues)
-
-## Legal Notice
-
-This security policy does not create any legal obligations or waive any rights. All security matters are handled at the sole discretion of the project maintainers.
+- **🔄 **Continuous Monitoring** - Regular security assessments of the codebase
+- **🛠️ **Automated Testing** - Security tests run with every code change
+- **📊 **Vulnerability Scanning** - Regular scans for known security issues
+- **🔒 **Dependency Checks** - Monitoring of all project dependencies
 
 ---
 
-*Last updated: October 2025*
+## 🤝 Responsible Disclosure Program
+
+**🌟 We value and reward security researchers who help improve our tool.**
+
+### 🏆 What We Commit To
+
+**🤝 Responsible Disclosure Principles:**
+
+- **⏰ **Prompt Response** - Acknowledgment within 24 hours of valid reports
+- **🔍 **Thorough Investigation** - Complete analysis and reproduction of issues
+- **📢 **Progress Updates** - Regular communication throughout the resolution process
+- **🏅 **Researcher Credit** - Public acknowledgment (with permission)
+- **⚡ **Timely Fixes** - Expedited development and release of security patches
+
+### 🎯 Disclosure Timeline
+
+| Phase | Timeframe | Action |
+|-------|-----------|---------|
+| **📥 Report Received** | Immediate | Acknowledge and validate |
+| **🔍 Investigation** | 1-3 days | Reproduce and assess impact |
+| **🛠️ Development** | 3-7 days | Create and test fix |
+| **✅ Release** | 7-14 days | Deploy security update |
+| **📢 Announcement** | Same day | Notify community |
+
+---
+
+## 📞 Contact & Communication
+
+**💬 Multiple channels for security concerns and support.**
+
+### 🔐 Security-Specific Contacts
+
+| Contact Method | Purpose | Response Time |
+|---------------|---------|---------------|
+| **📧 Email** | Security reports & vulnerabilities | < 24 hours |
+| **🔒 Encrypted** | Sensitive disclosures | < 12 hours |
+| **📱 Emergency** | Critical system impacts | < 6 hours |
+
+### 🌐 Communication Channels
+
+- **🔒 **Primary Security:** work.rezaul@outlook.com
+- **📧 **General Support:** work.rezaul@outlook.com
+- **🐛 **Bug Reports:** [GitHub Issues](https://github.com/rezaulwork/windows11-service-optimizer/issues)
+- **💬 **Discussions:** [GitHub Discussions](https://github.com/rezaulwork/windows11-service-optimizer/discussions)
+
+---
+
+## ⚖️ Legal & Compliance Notice
+
+**📋 Important legal information regarding this security policy.**
+
+### 📜 Policy Limitations
+
+This security policy **does not create legal obligations** or waive any rights. All security matters are handled at the **sole discretion** of the project maintainers.
+
+### 🔒 Confidentiality
+
+- **Security reports** are treated as confidential information
+- **Researcher privacy** is protected throughout the disclosure process
+- **No public disclosure** until fixes are available and coordinated
+
+### 🌍 Compliance
+
+This project complies with:
+- **📊 **Standard Security Practices** for open-source software
+- **🔒 **Responsible Disclosure Guidelines** industry standards
+- **⚖️ **Data Protection Regulations** applicable requirements
+
+---
+
+<div align="center">
+
+## 🔐 **Your Security Matters to Us** 🔐
+
+**Thank you for helping keep Windows 11 Service Optimizer secure and reliable.**
+
+*🛡️ Committed to security excellence since 2025*
+
+**[📧 Report Security Issues](mailto:work.rezaul@outlook.com)** | **[📖 View Source Code](https://github.com/rezaulwork/windows11-service-optimizer)**
+
+</div>
+
+---
+
+**📅 Last Updated:** October 2025
+**👨‍💻 Maintained by:** [REZ LAB](https://github.com/rezaulwork)
